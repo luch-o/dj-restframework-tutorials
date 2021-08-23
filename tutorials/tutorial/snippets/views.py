@@ -38,7 +38,7 @@ class SnippetDetail(generics.RetrieveUpdateDestroyAPIView):
 
 
 class SnippetHighlight(generics.GenericAPIView):
-    queryset = Snippet.objetcs.all()
+    queryset = Snippet.objects.all()
     renderer_classes = [renderers.StaticHTMLRenderer]
 
     def get(self, request, *args, **kwargs):
